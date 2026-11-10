@@ -28,7 +28,7 @@ Varje steg = egen session, egen branch, en PR. Tester körs före PR.
 
 ### Fas 1 – Grund
 - [x] **1. Repo:** git-repo + GitHub-repo, `.gitignore` (node_modules, dist, .env), `AGENTS.md`, `PLAN.md`, `.env.example`. *Klart när:* repot syns på GitHub med filerna.
-- [ ] **2. Server + CI:** Express + Vite middleware, tom React-sida, `GET /api/health`, första `node --test`, `.github/workflows/test.yml` (jobb `test`). *Klart när:* `npm run dev` visar sidan på http://localhost:3000, `npm test` är grön och Actions-körningen är grön.
+- [x] **2. Server + CI:** Express + Vite middleware, tom React-sida, `GET /api/health`, första `node --test`, `.github/workflows/test.yml` (jobb `test`). *Klart när:* `npm run dev` visar sidan på http://localhost:3000, `npm test` är grön och Actions-körningen är grön.
 - [ ] **3. Ruleset:** ruleset för `main` via `gh api` (kommandot visas innan det körs): kräv PR, kräv kontrollen `test`, förbjud force push och borttagning. *Klart när:* direkt push till `main` nekas.
 - [ ] **4. Databas:** Supabase-migrationer (alla tabeller utom `invitations`), RLS på, `supabase db push`, Supabase-klient, valideringsmodul (400 på svenska), låtsas-DB för tester. *Klart när:* tabellerna syns i Supabase med RLS på och testerna går utan nyckel.
 

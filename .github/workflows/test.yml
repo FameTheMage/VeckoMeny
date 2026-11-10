@@ -1,0 +1,19 @@
+name: Tester
+
+# Körs på varje pull request mot main
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  # Jobbets namn "test" är det rulesetet för main kräver
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test

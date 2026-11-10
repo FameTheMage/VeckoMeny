@@ -1,0 +1,17 @@
+# Beroenden och byggda filer
+node_modules
+dist
+
+# Hemligheter: får aldrig in i Git
+.env
+.env.*
+!.env.example
+SECRETS.secrets
+
+# Supabase CLI: lokalt tillstånd
+supabase/.temp
+supabase/.branches
+
+# Övrigt
+.DS_Store
+*.log

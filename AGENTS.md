@@ -13,6 +13,11 @@ Status och nästa uppgift finns i `PLAN.md`: nästa obockade steg är nästa upp
 7. Skriv alltid tester och kör alltid tester när något ändras (`node --test`).
 8. Korta, konkreta kodkommentarer.
 
+## Lärande (viktigast)
+- Jag vill förstå git, databas, app-bygge, koppling och driftsättning. Förklara varje kommando kort (vad det gör, varför) och visa kommandona så att jag ser vad som händer.
+- Korta, konkreta kommentarer och instruktioner. Inga långa utläggningar.
+- Efter varje merge: städa lokalt (`git switch main`, `git pull`, `git branch -d <gren>`) och förklara stegen.
+
 ## Hemligheter
 - Nycklar ligger i `.env`. `.env` och `SECRETS.secrets` ska stå i `.gitignore` (tillsammans med `node_modules` och `dist`).
 - Be mig aldrig klistra in nycklar i chatten. Läs inte `SECRETS.secrets`.
